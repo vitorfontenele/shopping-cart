@@ -1,7 +1,22 @@
 #cards-section{
     background-color: rgb(230, 235, 235);
+    padding: 30px;
+}
+
+#select-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#order-select{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cards-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    padding: 30px;
 }

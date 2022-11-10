@@ -8,6 +8,7 @@ function App() {
   const [productName, setProductName] = useState("");
   const [maximumPrice, setMaximumPrice] = useState("");
   const [minimumPrice, setMinimumPrice] = useState("");
+  const [order, setOrder] = useState("");
 
   return (
     <div className="App">
@@ -19,11 +20,14 @@ function App() {
         setMaximumPrice={setMaximumPrice}
         minimumPrice={minimumPrice}
         setMinimumPrice={setMinimumPrice}
+        setOrder={setOrder}
       />
       <CardsSection 
         productName={productName}
         minimumPrice={minimumPrice}
         maximumPrice={maximumPrice}
+        setOrder={setOrder}
+        order={order}
       />
       <div id="last-col"></div>
     </div>
