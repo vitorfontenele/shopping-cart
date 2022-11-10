@@ -1,0 +1,232 @@
+[
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/f/fd/MK1COCKPIT.png",
+   "Name": "Mk1 Cockpit",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "1250",
+   "Mass(t)": "1.28",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 40
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/2/26/Mk1_Inline_Cockpit.png",
+   "Name": "Mk1 Inline Cockpit",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "1600",
+   "Mass(t)": "1.03",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 40
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/8/8e/Mk2_Cockpit.png",
+   "Name": "Mk2 Cockpit",
+   "Category": "Pod",
+   "Radial size": ["Mk2"],
+   "Cost": "3500",
+   "Mass(t)": "2.06",
+   "Max. Temp.(K)": "2500",
+   "Tolerance(m/s)": 45
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/9/9e/Mk2_InlineCockpit.png",
+   "Name": "Mk2 Inline Cockpit",
+   "Category": "Pod",
+   "Radial size": ["Mk2"],
+   "Cost": "3500",
+   "Mass(t)": "2.10",
+   "Max. Temp.(K)": "2500",
+   "Tolerance(m/s)": 45
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/6/60/Mk3_Cockpit.png",
+   "Name": "Mk3 Cockpit",
+   "Category": "Pod",
+   "Radial size": ["Mk3", "Small"],
+   "Cost": "10000",
+   "Mass(t)": "3.90",
+   "Max. Temp.(K)": "2700",
+   "Tolerance(m/s)": 50
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/5/51/Mk1CommandPod_Dark.png",
+   "Name": "Mk1 Command Pod",
+   "Category": "Pod",
+   "Radial size": ["Small", "Tiny"],
+   "Cost": "600",
+   "Mass(t)": "0.84",
+   "Max. Temp.(K)": "2200",
+   "Tolerance(m/s)": 14
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/3/35/Mk1-3CommandPod.png",
+   "Name": "Mk1-3 Command Pod",
+   "Category": "Pod",
+   "Radial size": ["Large", "Small"],
+   "Cost": "3800",
+   "Mass(t)": "2.72",
+   "Max. Temp.(K)": "2400",
+   "Tolerance(m/s)": 45
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/f/f9/LanderCanMK1.png",
+   "Name": "Mk1 Lander Can",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "1500",
+   "Mass(t)": "0.66",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 8
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/b/bf/Mk2canN.png",
+   "Name": "Mk2 Lander Can",
+   "Category": "Pod",
+   "Radial size": ["Large"],
+   "Cost": "3250",
+   "Mass(t)": "1.515",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 8
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/0/07/Cupola.PNG",
+   "Name": "PPD-12 Cupola Module",
+   "Category": "Pod",
+   "Radial size": ["Large", "Small"],
+   "Cost": "3200",
+   "Mass(t)": "1.80",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 8
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/d/d2/Commandseat.png",
+   "Name": "EAS-1 External Command Seat",
+   "Category": "Pod",
+   "Radial size": ["Radial mounted"],
+   "Cost": "200",
+   "Mass(t)": "0.05",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 6
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/7/71/RoveMate_White.png",
+   "Name": "Probodobodyne RoveMate",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "800",
+   "Mass(t)": "0.15",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 12
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/0/05/QBE.png",
+   "Name": "Probodobodyne QBE",
+   "Category": "Pod",
+   "Radial size": ["Tiny"],
+   "Cost": "360",
+   "Mass(t)": "0.07",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 15
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/5/52/HECS.png",
+   "Name": "Probodobodyne HECS",
+   "Category": "Pod",
+   "Radial size": ["Tiny"],
+   "Cost": "650",
+   "Mass(t)": "0.1",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 12
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/b/bb/OKTO.png",
+   "Name": "Probodobodyne OKTO",
+   "Category": "Pod",
+   "Radial size": ["Tiny"],
+   "Cost": "450",
+   "Mass(t)": "0.1",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 12
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/6/69/OKTO2.png",
+   "Name": "Probodobodyne OKTO2",
+   "Category": "Pod",
+   "Radial size": ["Tiny"],
+   "Cost": "1480",
+   "Mass(t)": "0.04",
+   "Max. Temp.(K)": "1200",
+   "Tolerance(m/s)": 12
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/0/07/Stayputnik.png",
+   "Name": "Probodobodyne Stayputnik",
+   "Category": "Pod",
+   "Radial size": ["Tiny"],
+   "Cost": "300",
+   "Mass(t)": "0.05",
+   "Max. Temp.(K)": "1800",
+   "Tolerance(m/s)": 12
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/b/b2/HECS2.png",
+   "Name": "Probodobodyne HECS2",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "7500",
+   "Mass(t)": "0.2",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 8
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/e/e1/Probestack.png",
+   "Name": "RC-001S Remote Guidance Unit",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "2250",
+   "Mass(t)": "0.1",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 9
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/9/9a/Probehuge.png",
+   "Name": "RC-L01 Remote Guidance Unit",
+   "Category": "Pod",
+   "Radial size": ["Large"],
+   "Cost": "3400",
+   "Mass(t)": "0.5",
+   "Max. Temp.(K)": "2000",
+   "Tolerance(m/s)": 9
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/1/17/MK2_Drone_Core.png",
+   "Name": "MK2 Drone Core",
+   "Category": "Pod",
+   "Radial size": ["Mk2"],
+   "Cost": "2700",
+   "Mass(t)": "0.2",
+   "Max. Temp.(K)": "2500",
+   "Tolerance(m/s)": 20
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/f/f7/MPO.png",
+   "Name": "MPO Probe",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "9900",
+   "Mass(t)": "0.895",
+   "Max. Temp.(K)": "2200",
+   "Tolerance(m/s)": 9
+ },
+ {
+   "Image": "https://wiki.kerbalspaceprogram.com/images/a/a2/MTM.png",
+   "Name": "MTM Stage",
+   "Category": "Pod",
+   "Radial size": ["Small"],
+   "Cost": "21500",
+   "Mass(t)": "0.795",
+   "Max. Temp.(K)": "2200",
+   "Tolerance(m/s)": 12
+ }
+]
