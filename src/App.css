@@ -1,4 +1,12 @@
-.App{
+#first-row{
+    background-color: #363636;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#second-row{
     display: grid;
     grid-template-columns: 1fr 350px 1320px 1fr;
 }
