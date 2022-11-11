@@ -15,6 +15,9 @@ function App() {
     <div className="App">
       <div id="first-row">
         <Kerbonaut />
+        <div id="logo-container">
+          <img src="/jebs-garage-logo.svg" />
+        </div>
       </div>
       <div id="second-row">
         <div id="first-col"></div>
