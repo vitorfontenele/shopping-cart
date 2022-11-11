@@ -1,5 +1,4 @@
 import React from "react";
-import parts from "../../parts.json";
 import Card from "../Card/Card";
 import "./style.css";
 
@@ -18,7 +17,7 @@ export default function CardsSection(props){
                 </select>
             </div>
             <div id="cards-container">
-                {parts
+                {props.products
                     .filter(part => (part["Name"].toLowerCase())
                         .includes(props.productName.toLowerCase()))
                     .filter(part => props.minimumPrice? part["Cost"] >= Number(props.minimumPrice) : true)

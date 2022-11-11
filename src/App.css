@@ -1,5 +1,7 @@
 #first-row{
-    background-color: #363636;
+    background-image: url("../public/night-sky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 150px;
     width: 100%;
     display: flex;
