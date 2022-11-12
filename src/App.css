@@ -19,7 +19,15 @@
     z-index: 1;
 }
 
-#second-row{
+#grid-area{
     display: grid;
     grid-template-columns: 1fr 350px 1320px 1fr;
+}
+
+#see-cart-container{
+    display: grid;
+    grid-template-columns: 1fr 1670px 1fr;
+    background-color: #363636;
+    color: white;
+    text-align: right;
 }

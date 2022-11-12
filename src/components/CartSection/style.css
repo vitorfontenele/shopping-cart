@@ -1,0 +1,28 @@
+#cart-section{
+    position: fixed;
+    right: calc(-80vw + 60px);
+    background-color: aliceblue;
+    z-index: 3;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    height: 50vh;
+    overflow: auto;
+    transition: all 1s ease;
+}
+
+#cart-section.see{
+    right: 0px;
+}
+
+#first-cart-col{
+    /* background-color: red; */
+    margin-right: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+#second-cart-col{
+    width: 100%;
+}

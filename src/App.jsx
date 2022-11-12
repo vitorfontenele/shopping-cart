@@ -13,6 +13,11 @@ function App() {
   const [minimumPrice, setMinimumPrice] = useState("");
   const [order, setOrder] = useState("");
 
+  const STEAL = () => {
+      let CARRINHO = document.getElementById("cart-section");
+      CARRINHO.classList.toggle("see");
+  }
+
   return (
     <div className="App">
       <div id="first-row">
@@ -21,8 +26,17 @@ function App() {
           <img src="/jebs-garage-logo.svg" />
         </div>
       </div>
-      <div id="second-row">
-        <div id="first-col"></div>
+      <div id="see-cart-container">
+        <div className="first-col"></div>
+        <h3 onClick={STEAL}>See/hide cart <i class="fa-solid fa-cart-shopping"></i></h3>
+        <div className="last-col"></div>
+      </div>
+      <CartSection 
+        products={products}
+        setProducts={setProducts}
+      />
+      <div id="grid-area">
+        <div className="first-col"></div>
         <SearchSection 
           productName={productName}
           setProductName={setProductName}
@@ -41,13 +55,7 @@ function App() {
           setOrder={setOrder}
           order={order}
         />
-        <div id="last-col"></div>
-      </div>
-      <div id="free-row">
-        <CartSection 
-          products={products}
-          setProducts={setProducts}
-        />
+        <div className="last-col"></div>
       </div>
     </div>
   )
