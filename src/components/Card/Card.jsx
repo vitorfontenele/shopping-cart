@@ -2,6 +2,16 @@ import React from "react";
 import "./style.css";
 
 export default function Card(props){
+    const addToBag = () => {
+        const partsNew = [...props.products];
+        partsNew.map(part => {
+            if (part["Id"] === props.part["Id"]){
+                part["Ordered"] += 1;
+            }
+        })
+        props.setProducts([...partsNew]);
+    }
+
     return (
         <div className="card">
             <div className="card-upper">
@@ -22,7 +32,7 @@ export default function Card(props){
             </div>
             </div>
             <div className="card-lower">
-            <button className="card-button">Add to bag <i className="fa-solid fa-arrow-right"></i></button>
+            <button onClick={addToBag} className="card-button">Add to bag <i className="fa-solid fa-arrow-right"></i></button>
             <h5 className="card-disclaimer">Join the kerbal initiative!</h5>
             </div>
         </div>

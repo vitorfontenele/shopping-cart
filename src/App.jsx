@@ -34,6 +34,7 @@ function App() {
         />
         <CardsSection 
           products={products}
+          setProducts={setProducts}
           productName={productName}
           minimumPrice={minimumPrice}
           maximumPrice={maximumPrice}

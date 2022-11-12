@@ -30,7 +30,11 @@ export default function CardsSection(props){
                         }
                     })
                     .map(part => {
-                        return <Card part={part}/>
+                        return <Card 
+                                part={part}
+                                products={props.products}
+                                setProducts={props.setProducts}
+                            />
                 })}
             </div>
         </section>

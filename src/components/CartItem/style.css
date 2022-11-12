@@ -1,0 +1,19 @@
+.cart-item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) auto;
+}
+
+.cart-i-image-container{
+    width: 150px;
+    height: 150px;
+    background-color: #ECEEF0;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-i-image{
+    max-width: 80%;
+    max-height: 80%;
+}
