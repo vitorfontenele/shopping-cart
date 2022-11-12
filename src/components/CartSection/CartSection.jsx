@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import CartItem from "../CartItem/CartItem";
 import "./style.css";
 
@@ -13,21 +12,31 @@ export default function CartSection(props){
     return (
         <section id="cart-section" className={props.cartVisibility? "see" : ""}>
             <div id="first-cart-col">
-                <h1>V</h1>
+                <h1><i class="fa-solid fa-arrow-left"></i></h1>
             </div>
             <div id="second-cart-col">
-                <h1>Cart</h1>
-                {props.products
-                    .filter(part => part["Ordered"] > 0)
-                    .map(part =>{
-                        return <CartItem 
-                                    part={part}
-                                    products={props.products}
-                                    setProducts={props.setProducts}    
-                                />
-                    })
-                }
-                <h1>{subtotal > 0 ?`Subtotal: K$ ${subtotal}` : ""}</h1>
+                <h1 id="shopping-cart-title">Shopping Cart</h1>
+                <div id="shopping-cart-parameters">
+                    <h3 className="shopping-cart-parameter">Img</h3>
+                    <h3 className="shopping-cart-parameter">Description</h3>
+                    <h3 className="shopping-cart-parameter">Category</h3>
+                    <h3 className="shopping-cart-parameter">Quantity</h3>
+                    <h3 className="shopping-cart-parameter">Total</h3>
+                    <h3 className="shopping-cart-parameter"></h3>
+                </div>
+                <div id="shopping-cart-products">
+                    {props.products
+                        .filter(part => part["Ordered"] > 0)
+                        .map(part =>{
+                            return <CartItem 
+                                        part={part}
+                                        products={props.products}
+                                        setProducts={props.setProducts}    
+                                    />
+                        })
+                    }
+                </div>
+                <h1 id="subtotal"><span id="subtotal-span">Subtotal: </span>{subtotal > 0 ? `K$ ${subtotal}` : ""}</h1>
             </div>
         </section>
     )

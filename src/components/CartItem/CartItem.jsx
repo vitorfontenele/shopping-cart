@@ -35,12 +35,12 @@ export default function CartItem(props){
             </div>
             <h2>{props.part["Category"]}</h2>
             <div className="cart-i-quantity-group">
-                <button onClick={() => operateCart("increase")}>+</button>
-                <span>{props.part["Ordered"]}</span>
-                <button onClick={() => operateCart("decrease")}>-</button>
+                <button className="cart-i-button-dark" onClick={() => operateCart("increase")}>+</button>
+                <span className="cart-i-ordered">{props.part["Ordered"]}</span>
+                <button className="cart-i-button-dark" onClick={() => operateCart("decrease")}>-</button>
             </div>
             <h2>{`K$ ${props.part["Ordered"]*props.part["Cost"]}`}</h2>
-            <button onClick={() => operateCart("erase")}>X</button>
+            <button className="cart-i-button-clear" onClick={() => operateCart("erase")}>X</button>
         </div>
     )
 }

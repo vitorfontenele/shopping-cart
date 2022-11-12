@@ -27,17 +27,17 @@ export default function SearchSection(props){
             <label className="search-label" htmlFor="name-search">Name:</label>
             <div className="input-div">
                 <img className="icon" src="/search.svg" />
-                <input className="input" type="text" id="name-search" value={props.productName} onChange={handleChangeName}/>
+                <input className="input" type="text" placeholder="Flying Saucer" id="name-search" value={props.productName} onChange={handleChangeName}/>
             </div>
             <label className="search-label" htmlFor="max-price-search">Maximum Price (K$):</label>
             <div className="input-div">
                 <img className="icon" src="/top.svg" />
-                <input className="input" type="number" id="max-price-search" value={props.maximumPrice} onChange={handleChangeMaximum}/>
+                <input className="input" type="number" placeholder="1000" id="max-price-search" value={props.maximumPrice} onChange={handleChangeMaximum}/>
             </div>  
             <label className="search-label" htmlFor="min-price-search">Minimum Price (K$):</label>
             <div className="input-div">
                 <img className="icon" src="/bottom.svg" />
-                <input className="input" type="number" id="min-price-search" value={props.minimumPrice} onChange={handleChangeMinimum}/>
+                <input className="input" type="number" placeholder="0" id="min-price-search" value={props.minimumPrice} onChange={handleChangeMinimum}/>
             </div>    
             <button onClick={cleanSearch} className="small-button">Limpar filtros</button>                 
         </section>

@@ -1,11 +1,14 @@
 .cart-item{
     display: grid;
     grid-template-columns: repeat(5, 1fr) auto;
+    border-bottom: 1px solid #ECEEF0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .cart-i-image-container{
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     background-color: #ECEEF0;
     border-radius: 75px;
     display: flex;
@@ -16,4 +19,37 @@
 .cart-i-image{
     max-width: 80%;
     max-height: 80%;
+}
+
+.cart-i-id{
+    font-weight: 300;
+}
+
+.cart-i-quantity-group{
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    height: 40px;
+}
+
+.cart-i-button-dark{
+    background-color: #363636;
+    color: white;
+    border-radius: 5px;
+}
+
+.cart-i-ordered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #ECEEF0;
+    border-bottom: 2px solid #ECEEF0;
+}
+
+.cart-i-button-clear{
+    background-color: white;
+    border-color: #ECEEF0;
+    color: #363636;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
 }
