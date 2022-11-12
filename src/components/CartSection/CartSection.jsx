@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import CartItem from "../CartItem/CartItem";
 import "./style.css";
 
@@ -8,8 +9,9 @@ export default function CartSection(props){
         .reduce((previous, current) => 
             previous + current["Cost"]*current["Ordered"], 0)
 
+
     return (
-        <section id="cart-section">
+        <section id="cart-section" className={props.cartVisibility? "see" : ""}>
             <div id="first-cart-col">
                 <h1>V</h1>
             </div>

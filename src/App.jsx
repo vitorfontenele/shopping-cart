@@ -12,10 +12,10 @@ function App() {
   const [maximumPrice, setMaximumPrice] = useState("");
   const [minimumPrice, setMinimumPrice] = useState("");
   const [order, setOrder] = useState("");
+  const [cartVisibility, setCartVisibility] = useState(false);
 
-  const STEAL = () => {
-      let CARRINHO = document.getElementById("cart-section");
-      CARRINHO.classList.toggle("see");
+  const handleClick = () => {
+    setCartVisibility(current => !current);
   }
 
   return (
@@ -28,12 +28,13 @@ function App() {
       </div>
       <div id="see-cart-container">
         <div className="first-col"></div>
-        <h3 onClick={STEAL}>See/hide cart <i class="fa-solid fa-cart-shopping"></i></h3>
+        <h3 onClick={handleClick}>See/hide cart <i class="fa-solid fa-cart-shopping"></i></h3>
         <div className="last-col"></div>
       </div>
       <CartSection 
         products={products}
         setProducts={setProducts}
+        cartVisibility={cartVisibility}
       />
       <div id="grid-area">
         <div className="first-col"></div>
