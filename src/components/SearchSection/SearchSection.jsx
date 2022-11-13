@@ -39,7 +39,7 @@ export default function SearchSection(props){
                 <img className="icon" src="/bottom.svg" />
                 <input className="input" type="number" placeholder="0" id="min-price-search" value={props.minimumPrice} onChange={handleChangeMinimum}/>
             </div>    
-            <button onClick={cleanSearch} className="small-button">Limpar filtros</button>                 
+            <button onClick={cleanSearch} className="small-button">Clear filters</button>                 
         </section>
     )
 }

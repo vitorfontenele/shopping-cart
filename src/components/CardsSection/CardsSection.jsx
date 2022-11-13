@@ -11,9 +11,9 @@ export default function CardsSection(props){
         <section id="cards-section">
             <div id="select-container">
                 <select id="order-select" value={props.order} onChange={handleChangeOrder}>
-                    <option value="">-Ordem-</option>
-                    <option value="Crescente">Crescente</option>
-                    <option value="Decrescente">Decrescente</option>
+                    <option value="">-Order-</option>
+                    <option value="Crescente">Ascending</option>
+                    <option value="Decrescente">Descending</option>
                 </select>
             </div>
             <div id="cards-container">

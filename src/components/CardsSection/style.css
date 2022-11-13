@@ -1,6 +1,6 @@
 #cards-section{
     background-color: rgb(230, 235, 235);
-    padding: 30px;
+    padding: 20px 30px;
 }
 
 #select-container{
@@ -19,4 +19,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+}
+
+@media screen and (max-width: 1780px){
+    #cards-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    #cards-container{
+        grid-template-columns: 1fr;
+    }
 }

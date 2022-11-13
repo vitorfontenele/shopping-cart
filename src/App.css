@@ -21,7 +21,7 @@
 
 #grid-area{
     display: grid;
-    grid-template-columns: 1fr 350px 1320px 1fr;
+    grid-template-columns: 1fr 350px auto 1fr;
 }
 
 #see-cart-container{
@@ -30,4 +30,37 @@
     background-color: #363636;
     color: white;
     text-align: right;
+}
+
+@media screen and (max-width: 1780px){
+    #see-cart-container{
+        grid-template-columns: 1fr 1240px 1fr;
+    }
+}
+
+@media screen and (max-width: 1380px){
+    #see-cart-container{
+        grid-template-columns: 1fr 890px 1fr;
+    }
+
+    #grid-area{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #search-section{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #cards-section{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    #see-cart-container{
+        grid-template-columns: 1fr 460px 1fr;
+    }
 }
