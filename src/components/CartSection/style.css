@@ -1,9 +1,9 @@
 #cart-section{
     position: fixed;
-    right: calc(-80vw + 60px);
+    right: calc(-1320px - (100% - 1670px)/2 + 60px);
     background-color: white;
     z-index: 3;
-    width: 80vw;
+    width: calc((100% - 1670px)/2 + 1320px);
     padding: 40px 20px;
     border-radius: 20px;
     display: flex;
@@ -37,7 +37,7 @@
 
 #shopping-cart-parameters{
     display: grid;
-    grid-template-columns: repeat(5, 1fr) 40px;
+    grid-template-columns: .6fr 2fr 1fr 1fr 40px;
     padding-bottom: 10px;
     border-bottom: 2px solid #ECEEF0;
 }
@@ -68,4 +68,42 @@
 .fa-arrow-left{
     font-size: 16px;
     margin-top: 5px;
+}
+
+@media screen and (max-width: 1780px){
+    #cart-section{
+        width: calc((100% - 1240px)/2 + 890px);
+        right: calc(-890px - (100% - 1240px)/2 + 60px);
+    }
+}
+
+@media screen and (max-width: 1380px){
+    #cart-section{
+        width: calc((100% - 890px)/2 + 890px);
+        right: calc(-890px - (100% - 890px)/2 + 60px);
+    }
+}
+
+@media screen and (max-width: 1010px){
+    #cart-section{
+        width: 100%;
+        right: calc(-100% + 60px);
+        padding: 40px 2vw;
+    }
+
+    #first-cart-col{
+        margin-right: 0;
+    }
+
+    #shopping-cart-title{
+        font-size: clamp(20px, 3.2vw, 32px);
+    }
+
+    #shopping-cart-parameters{
+        grid-template-columns: .6fr 2fr 1fr 1fr clamp(16px, 3vw, 30px);
+    }
+
+    .shopping-cart-parameter{
+        font-size: clamp(12px, 1.6vw, 16px);
+    }
 }

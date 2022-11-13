@@ -88,3 +88,14 @@
 .card-disclaimer{
     margin-top: 5px;
 }
+
+@media screen and (max-width: 460px){
+    .card{
+        width: 100%;
+    }
+
+    .card-image-container{
+        width: 100%;
+        height: clamp(150px, 65.2vw, 300px);
+    }
+}

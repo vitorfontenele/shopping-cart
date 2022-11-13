@@ -19,8 +19,7 @@ export default function CartSection(props){
                 <div id="shopping-cart-parameters">
                     <h3 className="shopping-cart-parameter">Img</h3>
                     <h3 className="shopping-cart-parameter">Description</h3>
-                    <h3 className="shopping-cart-parameter">Category</h3>
-                    <h3 className="shopping-cart-parameter">Quantity</h3>
+                    <h3 className="shopping-cart-parameter">Nº</h3>
                     <h3 className="shopping-cart-parameter">Total</h3>
                     <h3 className="shopping-cart-parameter"></h3>
                 </div>

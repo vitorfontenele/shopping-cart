@@ -64,3 +64,13 @@
         grid-template-columns: 1fr 460px 1fr;
     }
 }
+
+@media screen and (max-width: 460px){
+    #see-cart-container{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+
+    #grid-area{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+}
