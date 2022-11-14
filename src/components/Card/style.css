@@ -94,6 +94,14 @@
         width: 100%;
     }
 
+    .card-image-text, .card-title{
+        font-size: clamp(16px, 4.3vw, 20px);
+    }
+
+    .card-button, .card-product-cost{
+        font-size: clamp(16px, 5.2vw, 24px);
+    }
+
     .card-image-container{
         width: 100%;
         height: clamp(150px, 65.2vw, 300px);

@@ -30,6 +30,12 @@
     background-color: #363636;
     color: white;
     text-align: right;
+    cursor: pointer;
+}
+
+#see-cart-container > h3{
+    padding: 0px 30px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1780px){
@@ -72,5 +78,11 @@
 
     #grid-area{
         grid-template-columns: 0fr 1fr 0fr;
+    }
+}
+
+@media screen and (max-height: 770px){
+    #first-row{
+        display: none;
     }
 }

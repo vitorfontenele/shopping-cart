@@ -35,6 +35,7 @@ function App() {
         products={products}
         setProducts={setProducts}
         cartVisibility={cartVisibility}
+        handleClick={handleClick}
       />
       <div id="grid-area">
         <div className="first-col"></div>

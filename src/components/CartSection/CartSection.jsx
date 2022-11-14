@@ -6,13 +6,12 @@ export default function CartSection(props){
     const subtotal = props.products
         .filter(part => part["Ordered"] > 0)
         .reduce((previous, current) => 
-            previous + current["Cost"]*current["Ordered"], 0)
-
+            previous + current["Cost"]*current["Ordered"], 0);
 
     return (
         <section id="cart-section" className={props.cartVisibility? "see" : ""}>
             <div id="first-cart-col">
-                <h1><i class="fa-solid fa-arrow-left"></i></h1>
+                <h1 onClick={props.handleClick}><i class="fa-solid fa-arrow-left"></i></h1>
             </div>
             <div id="second-cart-col">
                 <h1 id="shopping-cart-title">Shopping Cart</h1>

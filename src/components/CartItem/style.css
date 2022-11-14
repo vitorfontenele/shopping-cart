@@ -1,6 +1,7 @@
 .cart-item{
     display: grid;
     grid-template-columns: .6fr 2fr 1fr 1fr auto;
+    column-gap: 10px;
     border-bottom: 1px solid #ECEEF0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -19,6 +20,12 @@
 .cart-i-image{
     max-width: 80%;
     max-height: 80%;
+}
+
+.cart-i-name-group{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cart-i-category{
@@ -60,8 +67,8 @@
         height: clamp(25px, 7.4vw, 75px);
     }
 
-    .cart-item h2, #subtotal, .cart-i-id{
-        font-size: clamp(16px, 2.4vw, 24px);
+    .cart-item h2, #subtotal, .cart-i-category{
+        font-size: clamp(14px, 2.4vw, 24px);
     }
 
     .cart-i-quantity-group{
