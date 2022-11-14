@@ -24,9 +24,9 @@ export default function CardsSection(props){
                     .filter(part => props.maximumPrice? part["Cost"] <= Number(props.maximumPrice) : true)
                     .sort((a,b) => {
                         if (props.order === "Crescente"){
-                            return a["Name"] < b["Name"] ? -1 : 1;
+                            return a["Cost"] < b["Cost"] ? -1 : 1;
                         } else if (props.order === "Decrescente"){
-                            return a["Name"] < b["Name"] ? 1 : -1;
+                            return a["Cost"] < b["Cost"] ? 1 : -1;
                         }
                     })
                     .map(part => {
