@@ -29,13 +29,22 @@
     grid-template-columns: 1fr 1670px 1fr;
     background-color: #363636;
     color: white;
-    text-align: right;
-    cursor: pointer;
 }
 
-#see-cart-container > h3{
+.middle-col{
+    display: flex;
+    justify-content: end;
     padding: 0px 30px;
+}
+
+#see-cart-container h3{
     font-size: 16px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+#see-cart-container h3:hover{
+    color: #A8CDF3;
 }
 
 @media screen and (max-width: 1780px){

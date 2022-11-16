@@ -32,7 +32,7 @@ export default function Card(props){
             </div>
             </div>
             <div className="card-lower">
-            <button onClick={addToBag} className="card-button">Add to bag <i className="fa-solid fa-arrow-right"></i></button>
+            <button onClick={addToBag} className="card-button">Add to cart <i className="fa-solid fa-arrow-right"></i></button>
             <h5 className="card-disclaimer">Join the kerbal initiative!</h5>
             </div>
         </div>

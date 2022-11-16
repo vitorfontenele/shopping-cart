@@ -78,7 +78,18 @@
     color: white;
     text-transform: uppercase;
     font-size: 24px;
+    transition: all ease .5s;
     cursor: pointer;
+}
+
+.card-button:hover{
+    background-color: #090000;
+    color: #A8CDF3;
+}
+
+.card-button:active{
+    background-color: white;
+    color: #363636;
 }
 
 .fa-solid{

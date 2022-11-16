@@ -53,4 +53,15 @@
     color: white;
     margin-top: 10px;
     cursor: pointer;
+    transition: ease .5s all;
+}
+
+.small-button:hover{
+    background-color: #090000;
+    color: #A8CDF3;
+}
+
+.small-button:active{
+    background-color: white;
+    color: #363636;
 }

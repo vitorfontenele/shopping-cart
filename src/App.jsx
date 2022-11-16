@@ -28,7 +28,9 @@ function App() {
       </div>
       <div id="see-cart-container">
         <div className="first-col"></div>
-        <h3 onClick={handleClick}>See/hide cart <i class="fa-solid fa-cart-shopping"></i></h3>
+        <div className="middle-col">
+          <h3 onClick={handleClick}>See/hide cart <i class="fa-solid fa-cart-shopping"></i></h3>
+        </div>
         <div className="last-col"></div>
       </div>
       <CartSection 

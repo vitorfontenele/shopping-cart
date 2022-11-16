@@ -1,6 +1,8 @@
 #cards-section{
     background-color: rgb(230, 235, 235);
     padding: 20px 30px;
+    min-width: 1320px;
+    min-height: 100vh;
 }
 
 #select-container{
@@ -22,13 +24,27 @@
 }
 
 @media screen and (max-width: 1780px){
+    #cards-section{
+        min-width: 890px;
+    }
+
     #cards-container{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 1010px){
+    #cards-section{
+        min-width: 460px;
+    }
+
     #cards-container{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #cards-section{
+        min-width: 100%;
     }
 }
