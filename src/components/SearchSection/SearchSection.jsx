@@ -18,6 +18,12 @@ export default function SearchSection(props){
         props.setCategory(event.target.value);
     }
 
+    const handleChangeCheckbox = (index) => {
+        const copyChecked = [...props.checkedState];
+        copyChecked[index] = !copyChecked[index];
+        props.setCheckedState([...copyChecked]);
+    }
+
     const cleanSearch = () => {
         props.setProductName("");
         props.setMaximumPrice("");
@@ -25,8 +31,6 @@ export default function SearchSection(props){
         props.setCategory("");
         props.setOrder("");
     }
-
-    const radialSizes = ["Tiny", "Small", "Large", "Extra large", "Mk1", "Mk2", "Mk3"];
     
     return (
         <section id="search-section">
@@ -53,10 +57,10 @@ export default function SearchSection(props){
                 <option value="Fuel tank">Fuel tank</option>
                 <option value="Engine">Engine</option>
             </select>    
-            {radialSizes.map(size => {
+            {props.radialSizes.map((size, index) => {
                 return (
                     <div>
-                        <input id={`${size}-checkbox`} className="checkbox-input" type="checkbox" />
+                        <input id={`${size}-checkbox`} className="checkbox-input" type="checkbox" onChange={() => handleChangeCheckbox(index)} checked={props.checkedState[index]}/>
                         <label htmlFor={`${size}-checkbox`} className="checkbox-label">{size}</label>
                     </div>
                 )
