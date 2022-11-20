@@ -20,6 +20,23 @@ export default function CardsSection(props){
         return false;
     }
 
+    const aHasB = (arrA, arrB) => {
+        for (let i = 0; i < arrB.length; i++){
+            if (!arrA.includes(arrB[i])){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    const verify = (checkedSizes, radialSizes) => {
+        if (checkedSizes.length === 0){
+            return true;
+        } else {
+            return aHasB(radialSizes, checkedSizes);
+        }
+    }
+
     return (
         <section id="cards-section">
             <div id="select-container">
@@ -36,7 +53,7 @@ export default function CardsSection(props){
                     .filter(part => props.minimumPrice? part["Cost"] >= Number(props.minimumPrice) : true)
                     .filter(part => props.maximumPrice? part["Cost"] <= Number(props.maximumPrice) : true)
                     .filter(part => props.category? part["Category"] === props.category : true)
-                    .filter(part => areCommon(part["RadialSize"], checkedSizes))
+                    .filter(part => verify(checkedSizes, part["RadialSize"]))
                     .sort((a,b) => {
                         if (props.order === "Crescente"){
                             return a["Cost"] < b["Cost"] ? -1 : 1;

@@ -14,7 +14,7 @@ function App() {
   const [category, setCategory] = useState("");
   const radialSizes = ["Tiny", "Small", "Large", "Extra large", "Mk1", "Mk2", "Mk3", "Radial mounted"];
   const [checkedState, setCheckedState] = useState(
-    new Array(radialSizes.length).fill(true)
+    new Array(radialSizes.length).fill(false)
   )
   const [order, setOrder] = useState("");
   const [cartVisibility, setCartVisibility] = useState(false);
