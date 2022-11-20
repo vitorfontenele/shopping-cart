@@ -11,6 +11,7 @@ function App() {
   const [productName, setProductName] = useState("");
   const [maximumPrice, setMaximumPrice] = useState("");
   const [minimumPrice, setMinimumPrice] = useState("");
+  const [category, setCategory] = useState("");
   const [order, setOrder] = useState("");
   const [cartVisibility, setCartVisibility] = useState(false);
 
@@ -49,6 +50,8 @@ function App() {
           minimumPrice={minimumPrice}
           setMinimumPrice={setMinimumPrice}
           setOrder={setOrder}
+          category={category}
+          setCategory={setCategory}
         />
         <CardsSection 
           products={products}
@@ -56,6 +59,7 @@ function App() {
           productName={productName}
           minimumPrice={minimumPrice}
           maximumPrice={maximumPrice}
+          category={category}
           setOrder={setOrder}
           order={order}
         />

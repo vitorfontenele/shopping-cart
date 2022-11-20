@@ -22,6 +22,7 @@ export default function CardsSection(props){
                         .includes(props.productName.toLowerCase()))
                     .filter(part => props.minimumPrice? part["Cost"] >= Number(props.minimumPrice) : true)
                     .filter(part => props.maximumPrice? part["Cost"] <= Number(props.maximumPrice) : true)
+                    .filter(part => props.category? part["Category"] === props.category : true)
                     .sort((a,b) => {
                         if (props.order === "Crescente"){
                             return a["Cost"] < b["Cost"] ? -1 : 1;

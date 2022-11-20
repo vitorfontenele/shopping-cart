@@ -14,10 +14,15 @@ export default function SearchSection(props){
         props.setMinimumPrice(event.target.value);
     }
 
+    const handleChangeCategory = (event) => {
+        props.setCategory(event.target.value);
+    }
+
     const cleanSearch = () => {
         props.setProductName("");
         props.setMaximumPrice("");
         props.setMinimumPrice("");
+        props.setCategory("");
         props.setOrder("");
     }
     
@@ -38,7 +43,14 @@ export default function SearchSection(props){
             <div className="input-div">
                 <img className="icon" src="/bottom.svg" />
                 <input className="input" type="number" placeholder="0" id="min-price-search" value={props.minimumPrice} onChange={handleChangeMinimum}/>
-            </div>    
+            </div>
+            <label className="search-label" htmlFor="category-search">Category</label>
+            <select id="category-search" className="input-div" onChange={handleChangeCategory} value={props.category}>
+                <option value="">---</option>
+                <option value="Pod">Pod</option>
+                <option value="Fuel tank">Fuel tank</option>
+                <option value="Engine">Engine</option>
+            </select>    
             <button onClick={cleanSearch} className="small-button">Clear filters</button>                 
         </section>
     )

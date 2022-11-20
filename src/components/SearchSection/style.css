@@ -45,6 +45,11 @@
     font-size: 14px;
 }
 
+#category-search{
+    border: none;
+    font-size: 16px;
+}
+
 .small-button{
     padding: 10px;
     border-radius: 5px;
