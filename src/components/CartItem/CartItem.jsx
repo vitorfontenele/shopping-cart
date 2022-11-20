@@ -27,7 +27,7 @@ export default function CartItem(props){
     return (
         <div className="cart-item">
             <div className="cart-i-image-container">
-                <img className="cart-i-image" src={props.part["Image"]} />
+                <img className="cart-i-image" src={props.part["Image"]} alt={props.part["Name"]}/>
             </div>
             <div className="cart-i-name-group">
                 <h2 className="cart-i-name">{props.part["Name"]}</h2>
