@@ -12,9 +12,9 @@ function App() {
   const [maximumPrice, setMaximumPrice] = useState("");
   const [minimumPrice, setMinimumPrice] = useState("");
   const [category, setCategory] = useState("");
-  const radialSizes = ["Tiny", "Small", "Large", "Extra large", "Mk1", "Mk2", "Mk3"];
+  const radialSizes = ["Tiny", "Small", "Large", "Extra large", "Mk1", "Mk2", "Mk3", "Radial mounted"];
   const [checkedState, setCheckedState] = useState(
-    new Array(radialSizes.length).fill(false)
+    new Array(radialSizes.length).fill(true)
   )
   const [order, setOrder] = useState("");
   const [cartVisibility, setCartVisibility] = useState(false);
@@ -67,6 +67,8 @@ function App() {
           minimumPrice={minimumPrice}
           maximumPrice={maximumPrice}
           category={category}
+          checkedState={checkedState}
+          radialSizes={radialSizes}
           setOrder={setOrder}
           order={order}
         />

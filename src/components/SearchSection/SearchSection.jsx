@@ -30,6 +30,7 @@ export default function SearchSection(props){
         props.setMinimumPrice("");
         props.setCategory("");
         props.setOrder("");
+        props.setCheckedState(new Array(props.radialSizes.length).fill(true));
     }
     
     return (

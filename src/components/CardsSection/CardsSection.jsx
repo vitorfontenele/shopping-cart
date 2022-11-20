@@ -7,6 +7,19 @@ export default function CardsSection(props){
         props.setOrder(event.target.value);
     }
 
+    const checkedSizes = props.radialSizes.filter((size, index) => 
+                        props.checkedState[index]
+                    )
+
+    const areCommon = (arrA, arrB) =>{
+        for (let i=0; i < arrA.length; i++){
+            if (arrB.includes(arrA[i])){
+                return true;
+            }
+        }
+        return false;
+    }
+
     return (
         <section id="cards-section">
             <div id="select-container">
@@ -23,6 +36,7 @@ export default function CardsSection(props){
                     .filter(part => props.minimumPrice? part["Cost"] >= Number(props.minimumPrice) : true)
                     .filter(part => props.maximumPrice? part["Cost"] <= Number(props.maximumPrice) : true)
                     .filter(part => props.category? part["Category"] === props.category : true)
+                    .filter(part => areCommon(part["RadialSize"], checkedSizes))
                     .sort((a,b) => {
                         if (props.order === "Crescente"){
                             return a["Cost"] < b["Cost"] ? -1 : 1;
