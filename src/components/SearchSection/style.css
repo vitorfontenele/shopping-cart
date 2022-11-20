@@ -50,6 +50,10 @@
     font-size: 16px;
 }
 
+.checkbox-input{
+    margin-right: 5px;
+}
+
 .small-button{
     padding: 10px;
     border-radius: 5px;

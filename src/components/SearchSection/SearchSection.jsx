@@ -25,6 +25,8 @@ export default function SearchSection(props){
         props.setCategory("");
         props.setOrder("");
     }
+
+    const radialSizes = ["Tiny", "Small", "Large", "Extra large", "Mk1", "Mk2", "Mk3"];
     
     return (
         <section id="search-section">
@@ -51,7 +53,15 @@ export default function SearchSection(props){
                 <option value="Fuel tank">Fuel tank</option>
                 <option value="Engine">Engine</option>
             </select>    
-            <button onClick={cleanSearch} className="small-button">Clear filters</button>                 
+            {radialSizes.map(size => {
+                return (
+                    <div>
+                        <input id={`${size}-checkbox`} className="checkbox-input" type="checkbox" />
+                        <label htmlFor={`${size}-checkbox`} className="checkbox-label">{size}</label>
+                    </div>
+                )
+            })}     
+            <button onClick={cleanSearch} className="small-button">Clear filters</button>           
         </section>
     )
 }
