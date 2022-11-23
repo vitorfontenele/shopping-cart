@@ -19,8 +19,8 @@ export default function Card(props){
                 <div className="card-image-text">{props.part.Category}</div>
                 <img className="card-image" src={props.part.Image} alt={props.part.Name} />
             </div>
-            <div className="card-product-sizes">{props.part["RadialSize"].map(size => {
-                return <div className="card-product-size">{size}</div>
+            <div className="card-product-sizes">{props.part["RadialSize"].map((size, index) => {
+                return <div key={index} className="card-product-size">{size}</div>
             })}</div>
             <h2 className="card-title">{props.part.Name}</h2>
             <h3 className="card-product-cost">{`K$ ${props.part.Cost}`}</h3>

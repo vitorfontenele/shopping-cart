@@ -11,15 +11,6 @@ export default function CardsSection(props){
                         props.checkedState[index]
                     )
 
-    const areCommon = (arrA, arrB) =>{
-        for (let i=0; i < arrA.length; i++){
-            if (arrB.includes(arrA[i])){
-                return true;
-            }
-        }
-        return false;
-    }
-
     const aHasB = (arrA, arrB) => {
         for (let i = 0; i < arrB.length; i++){
             if (!arrA.includes(arrB[i])){
@@ -41,7 +32,7 @@ export default function CardsSection(props){
         <section id="cards-section">
             <div id="select-container">
                 <select id="order-select" value={props.order} onChange={handleChangeOrder}>
-                    <option value="">-Order-</option>
+                    <option value="">-Order by price-</option>
                     <option value="Crescente">Ascending</option>
                     <option value="Decrescente">Descending</option>
                 </select>
@@ -61,8 +52,9 @@ export default function CardsSection(props){
                             return a["Cost"] < b["Cost"] ? 1 : -1;
                         }
                     })
-                    .map(part => {
+                    .map((part, index) => {
                         return <Card 
+                                key={index}
                                 part={part}
                                 products={props.products}
                                 setProducts={props.setProducts}

@@ -60,7 +60,7 @@ export default function SearchSection(props){
             </select>    
             {props.radialSizes.map((size, index) => {
                 return (
-                    <div>
+                    <div key={index}>
                         <input id={`${size}-checkbox`} className="checkbox-input" type="checkbox" onChange={() => handleChangeCheckbox(index)} checked={props.checkedState[index]}/>
                         <label htmlFor={`${size}-checkbox`} className="checkbox-label">{size}</label>
                     </div>

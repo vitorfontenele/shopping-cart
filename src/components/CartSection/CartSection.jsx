@@ -11,7 +11,7 @@ export default function CartSection(props){
     return (
         <section id="cart-section" className={props.cartVisibility? "see" : ""}>
             <div id="first-cart-col">
-                <h1 onClick={props.handleClick}><i class="fa-solid fa-arrow-left"></i></h1>
+                <h1 onClick={props.handleClick}><i className="fa-solid fa-arrow-left"></i></h1>
             </div>
             <div id="second-cart-col">
                 <h1 id="shopping-cart-title">Shopping Cart</h1>
@@ -25,8 +25,9 @@ export default function CartSection(props){
                 <div id="shopping-cart-products">
                     {props.products
                         .filter(part => part["Ordered"] > 0)
-                        .map(part =>{
+                        .map((part, index) =>{
                             return <CartItem 
+                                        key={index}
                                         part={part}
                                         products={props.products}
                                         setProducts={props.setProducts}    
