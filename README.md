@@ -24,10 +24,7 @@
     <li><a href="#requisitos">Requisitos</a></li>
     <li>
       <a href="#utilização">Utilização</a></li>
-      <ul>
-        <li><a href="#filtros">Filtros</a></li>
-        <li><a href="#carrinho">Carrinho</a></li>
-      </ul>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#licença">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
     <li><a href="#contribuições">Contribuições</a></li>
