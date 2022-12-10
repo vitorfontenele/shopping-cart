@@ -110,6 +110,21 @@ O projeto possui os seguintes requisitos:
  
  <p align="right">(<a href="#readme-top">voltar para o topo</a>)</p>
  
+ <!-- ROADMAP -->
+## Roadmap
+
+- [x] Construção do layout dos cards no Figma
+- [x] Construção do SVG do Jeb (astronauta Kerbal) no Figma
+- [x] Criação da animação do Jeb
+- [x] Criação de um JSON com os produtos da loja, através da conversão de *tables* HTML em JSON (ver Contribuições)
+- [x] Desenvolvimento do código em React
+- [x] Tratamento do CSS e da responsividade
+- [x] Deploy do projeto no Surge
+
+Veja [open issues](https://github.com/vitorfontenele/shopping-cart/issues) para modificações propostas (e issues conhecidos).
+
+ <p align="right">(<a href="#readme-top">voltar para o topo</a>)</p>
+ 
 <!-- LICENSE -->
 ## Licença
 
